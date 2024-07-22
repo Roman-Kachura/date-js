@@ -1,0 +1,93 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+button{
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: .3s;
+}
+
+.dial{
+  width: 300px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dial__output{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dial__buttons{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dial__buttons-item{
+  width: 30%;
+  height: 100%;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.dial__buttons-item:hover,
+.dial__buttons-item:focus-visible{
+  background: #ffd;
+}
+
+.dial__buttons-item_time{
+  background: #4a4af5;
+  color: #fff;
+}
+
+.dial__buttons-item_time:hover,
+.dial__buttons-item_time:focus-visible{
+  background: #3e3ec0;
+}
+
+.dial__buttons-item_date{
+  background: #ff6d07;
+  color: #fff;
+}
+
+.dial__buttons-item_date:hover,
+.dial__buttons-item_date:focus-visible{
+  background: #e06007;
+}
